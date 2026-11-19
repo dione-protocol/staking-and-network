@@ -100,15 +100,54 @@ What this repository does not cover is holding the token safely or moving it bet
 
 </div>
 
+## What each guide changes
+
+<div align="center">
+
+| Task | Guide | Outcome |
+| --- | --- | --- |
+| Delegate for the first time | [How to Stake DIONE Coin](how-to-stake-dione-coin.md) | The delegation clears the minimum, the validator is chosen on uptime, and the explorer shows the stake in the first period. |
+| Judge a validator | [Choose a Validator in DIONE Wallet](choose-a-validator-in-dione-wallet.md) | Uptime and size decide the choice, while commission is treated as a cost rather than as a quality signal. |
+| Understand the payment | [DIONE Staking Rewards Explained](dione-staking-rewards-explained.md) | The rate is read per thirty-day period against a yearly cap, and the validator commission is subtracted before the figure is trusted. |
+| Plan an exit | [Unstake DIONE and Wait Out the Unbonding Period](unstake-dione-and-wait-for-unbonding.md) | Ten days pass with the tokens earning nothing and moving nowhere, so the exit is planned rather than discovered. |
+| Run the node | [Run an Orion DIONE Validator](run-an-orion-dione-validator.md) | The self-stake is bonded and the node stays online, because missed blocks cost both the validator and the people who delegated. |
+| Place the project | [What Is DIONE Protocol?](what-is-dione-protocol.md) | The protocol, the chain and the wallet are separated, which makes every other page in the repository easier to read. |
+
+</div>
+
+
 ## Common first questions
 
-**How much do I need to stake?** Ten thousand DIONE opens a delegation. Below that the staking screen will not accept it, and the minimums page explains what that implies for a holding split across several addresses.
+### How much do I need to stake?
 
-**How long is the money locked?** Undelegating starts a ten-day unbonding period in which the tokens earn nothing and cannot be moved. Leaving inside the first periods also costs a penalty of seven, six or five percent depending on how early you exit.
+Ten thousand DIONE opens a delegation. Below that the staking screen will not accept it, and the minimums page explains what that implies for a holding split across several addresses.
 
-**What rate should I expect?** One percent per thirty-day period, against an eight percent yearly cap, less the validator's commission. The calculator page turns that into an amount for a given stake, and the penalty comparison is part of the same answer.
+### How long is the money locked?
 
-**Does staking move my keys anywhere?** No. Delegation is a transaction signed by your key, so a hardware wallet still approves it on the device, and the phrase stays where you put it. What you delegate is the voting power attached to the stake, not custody of the tokens.
+Undelegating starts a ten-day unbonding period in which the tokens earn nothing and cannot be moved. Leaving inside the first periods also costs a penalty of seven, six or five percent depending on how early you exit.
+
+### What rate should I expect?
+
+One percent per thirty-day period, against an eight percent yearly cap, less the validator's commission. The calculator page turns that into an amount for a given stake, and the penalty comparison is part of the same answer.
+
+### Does staking move my keys anywhere?
+
+No. Delegation is a transaction signed by your key, so a hardware wallet still approves it on the device, and the phrase stays where you put it. What you delegate is the voting power attached to the stake, not custody of the tokens.
+
+### Do rewards compound on their own?
+
+No. They accrue as a balance and do not join the delegation until you claim and delegate again, so a period's payment does not change next period's base. The calculator page shows the difference between the two approaches.
+
+### What happens if my validator goes offline?
+
+The chain keeps your delegation and your tokens stay yours, but the missed blocks cost rewards and the leaderboard records them. That is why uptime is the first column to read and commission the last.
+
+## Before you install
+
+The application runs on Windows 10 (1909) or later in 64-bit, on macOS 12 or later for either architecture, and on 64-bit Linux such as Ubuntu 20.04 or an equivalent distribution. There is no package repository to add, no node to run beside it and no system library to install first: the platform file on the release page is the whole download.
+
+Confirm three things before the first launch, because each one is cheaper now than later. The file came from the release page above and not from a mirror. The machine meets the row for its platform in the table at the top of this page. The phrase from the first run is written down physically, since the application shows it once and never on request. If any of the three is still open, the guide for that step is in the list above and takes a few minutes.
+
 
 ---
 
